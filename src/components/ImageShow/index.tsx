@@ -1,8 +1,7 @@
+import { Image } from "../../App";
+
 type ImageShowType = {
-  image: {
-    urls: { small: string };
-    alt_description: string;
-  };
+  image: Image;
 };
 
 function ImageShow({ image }: ImageShowType) {

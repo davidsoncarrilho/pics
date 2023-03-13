@@ -1,6 +1,10 @@
-import { ImageListProp, Image } from "../../App";
+import { Image } from "../../App";
 import ImageShow from "../ImageShow";
 import "./ImageList.css";
+
+export type ImageListProp = {
+  images: Image[];
+};
 
 function ImageList({ images }: ImageListProp) {
   return (

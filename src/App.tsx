@@ -9,12 +9,8 @@ export type Image = {
   alt_description: string;
 };
 
-export type ImageListProp = {
-  images: Image[];
-};
-
 function App() {
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState<Image[]>([]);
 
   const handleSubmit = async (term: string) => {
     const result = await searchImages(term);
